@@ -31,8 +31,10 @@ def main():
     myPlayer2 = Player("Lolo", 2)
 
     print(f"Player1: {myPlayer1} and Player2: {myPlayer2}")
-
-    myGame = TicTacToeGame()
+    try:
+        myGame = TicTacToeGame()
+    except:
+        print("no puedo crear la instancia")
 
     myGame.player1 = myPlayer1
     myGame.player2 = myPlayer2
